@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1dX-N7-XUl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--YoutubePlayerView-->
+        <scene sceneID="5We-7B-J9h">
+            <objects>
+                <viewController storyboardIdentifier="YoutubePlayerViewViewController" title="YoutubePlayerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1dX-N7-XUl" customClass="YoutubePlayerViewViewController" customModule="Movies_DB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1aI-fb-72i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pzc-3E-FbE" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWS-Vl-wvw">
+                                <rect key="frame" x="348" y="44" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="OoJ-X1-YDx"/>
+                                    <constraint firstAttribute="height" constant="50" id="no7-ai-HNF"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="x.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="buttonCloseTouchUp:" destination="1dX-N7-XUl" eventType="touchUpInside" id="8HJ-sw-4ya"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DEK-3G-Vg1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DEK-3G-Vg1" firstAttribute="trailing" secondItem="VWS-Vl-wvw" secondAttribute="trailing" constant="16" id="2i3-21-vh8"/>
+                            <constraint firstItem="DEK-3G-Vg1" firstAttribute="trailing" secondItem="Pzc-3E-FbE" secondAttribute="trailing" id="XV4-Mc-GAJ"/>
+                            <constraint firstItem="Pzc-3E-FbE" firstAttribute="leading" secondItem="DEK-3G-Vg1" secondAttribute="leading" id="ePh-Db-c2L"/>
+                            <constraint firstItem="VWS-Vl-wvw" firstAttribute="top" secondItem="DEK-3G-Vg1" secondAttribute="top" id="pOj-yV-ZNw"/>
+                            <constraint firstItem="Pzc-3E-FbE" firstAttribute="top" secondItem="VWS-Vl-wvw" secondAttribute="bottom" id="udV-T0-lxb"/>
+                            <constraint firstItem="DEK-3G-Vg1" firstAttribute="bottom" secondItem="Pzc-3E-FbE" secondAttribute="bottom" id="vH7-Ra-5E3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="YTView" destination="Pzc-3E-FbE" id="5j4-Sp-0XE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDV-u4-9W0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="x.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

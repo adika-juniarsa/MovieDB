@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (5.4.1)
+  - AlamofireNetworkActivityLogger (3.4.0):
+    - Alamofire (~> 5.4.0)
+  - Kingfisher (6.1.1)
+  - ReachabilitySwift (5.0.0)
+  - SVPullToRefresh (0.4.1)
+  - SwiftyJSON (5.0.0)
+  - youtube-ios-player-helper (1.0.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireNetworkActivityLogger
+  - Kingfisher
+  - ReachabilitySwift
+  - SVPullToRefresh
+  - SwiftyJSON
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityLogger
+    - Kingfisher
+    - ReachabilitySwift
+    - SVPullToRefresh
+    - SwiftyJSON
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  AlamofireNetworkActivityLogger: 162ab8aee00e6267a4304d7cc134e13ccfe3bcc5
+  Kingfisher: 676d63307fbef6ed5d5ed400bff36983480d7500
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  youtube-ios-player-helper: 0185c57db23c80d63d6ca11251d110abb8a4ca61
+
+PODFILE CHECKSUM: 3450fbab0756f2559dca353ceb0fc93dec940ff2
+
+COCOAPODS: 1.10.1
